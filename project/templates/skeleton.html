@@ -31,6 +31,11 @@
 <body{% block body_attr %}{% endblock %}>
     {% cms_toolbar %}
     {% block header_topbar %}{% spaceless %}<div id="header-container"{% block header_topbar_attr %} class="contain-to-grid"{% endblock %}>
+
+        {% for language in LANGUAGES %}
+        <a href="/{{ language.0 }}/" {% ifequal lang language.0 %} class="current"{% endifequal %}><img src="{{ MEDIA_URL }}[path to your flags images]{{ language.0 }}.gif" />{{ language.0 }}</a>
+        {% endfor %
+
         <nav id="header" class="top-bar">
             <ul>
                 <li class="name"><h1 class="brand-name"><a href="/" title="{{ SITE.name }}"><span class="brand">{{ SITE.name }}</span></a></h1></li>

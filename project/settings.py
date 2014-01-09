@@ -57,9 +57,12 @@ SITE_ID = 1
 
 TIME_ZONE = 'Europe/Paris'
 
-LANGUAGES = (('fr', gettext('French')),
-             ('en', gettext('English')),
-             )
+
+LANGUAGES = [
+    ('fr', u'Français'),
+    ('de', u'German'),
+    ('en', u'English'),
+]
 
 LANGUAGE_CODE = 'fr'
 
@@ -111,6 +114,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = ')1-swhxe1hvk2rp4=&g(l)dt$3wc%!0lbcjug%9e@7bjz@cz3$'
@@ -197,9 +201,6 @@ LOGGING = {
     }
 }
 
-LANGUAGES = [
-    ('fr', u'Français'),
-]
 
 
 TEMPLATE_CONTEXT_PROCESSORS = (
