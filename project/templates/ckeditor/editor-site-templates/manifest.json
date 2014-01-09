@@ -1,0 +1,27 @@
+{
+    "intro-overview_type-1.html": {
+        "title": "Introduction de type 1",
+        "description": "Page d'introduction avec une bannière en image et un bloc de contenu en survol en bas à gauche de la bannière.",
+        "image": "intro-overview_type-1.png"
+    },
+    "intro-overview_type-2.html": {
+        "title": "Introduction de type 2",
+        "description": "Page d'introduction avec une bannière en image et un bloc de contenu à gauche de la bannière.",
+        "image": "intro-overview_type-2.png"
+    },
+    "blockrow.html": {
+        "title": "Bloc vignette",
+        "description": "Un bloc contenant un titre puis une grosse vignette à gauche et le contenu à droite.",
+        "image": "blockrow.png"
+    },
+    "grid-band.html": {
+        "title": "Grille de bandes de contenu",
+        "description": "Une grille dont les visuels de chaque colonne, sont alignés horizontalement sur un fond noir et leur contenu en dessous",
+        "image": "grid-band.png"
+    },
+    "black-button-right.html": {
+        "title": "Bouton noir à droite",
+        "description": "Bouton noir à plat avec arrondi découpé pour être positionné à droite.",
+        "image": "black-button-right.png"
+    }
+}

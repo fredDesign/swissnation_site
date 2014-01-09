@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: baccarat.contact_form\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-14 15:04+0100\n"
+"PO-Revision-Date: 2011-02-14 15:05+0100\n"
+"Last-Translator: Fantomas <Fantomas42@gmail.com>\n"
+"Language-Team: Fantomas42 <jfache@emencia.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: admin.py:19
+msgid "Message"
+msgstr "Message"
+
+#: admin.py:20
+msgid "Company"
+msgstr "Société"
+
+#: admin.py:21
+#: templates/contact_form/contact_form.html:3
+#: templates/contact_form/contact_form.html:6
+#: templates/contact_form/contact_form_sent.html:7
+msgid "Contact"
+msgstr "Contact"
+
+#: admin.py:22
+msgid "Address"
+msgstr "Adresse"
+
+#: forms.py:17
+msgid "You have to define your company name and your phone number."
+msgstr "Vous devez définir votre société et votre téléphone."
+
+#: models.py:10
+msgid "mlle"
+msgstr "Mlle"
+
+#: models.py:11
+msgid "mme"
+msgstr "Mme"
+
+#: models.py:12
+msgid "mr"
+msgstr "Mr"
+
+#: models.py:14
+msgid "prescriptor"
+msgstr "un prescripteur"
+
+#: models.py:15
+msgid "resailer"
+msgstr "un revendeur"
+
+#: models.py:16
+#: models.py:33
+msgid "company"
+msgstr "société"
+
+#: models.py:17
+msgid "journalist"
+msgstr "un journaliste"
+
+#: models.py:18
+msgid "private individual"
+msgstr "un particulier"
+
+#: models.py:20
+msgid "submit a project"
+msgstr "un projet à nous soumettre"
+
+#: models.py:21
+msgid "documentation asking"
+msgstr "une demande de documentation"
+
+#: models.py:22
+msgid "our products"
+msgstr "nos produits"
+
+#: models.py:23
+msgid "our services"
+msgstr "le service après-vente"
+
+#: models.py:24
+msgid "our point of sales"
+msgstr "nos points de vente"
+
+#: models.py:26
+msgid "civility"
+msgstr "civilité"
+
+#: models.py:28
+msgid "first name"
+msgstr "prénom"
+
+#: models.py:29
+msgid "last name"
+msgstr "nom"
+
+#: models.py:31
+msgid "you are"
+msgstr "vous êtes"
+
+#: models.py:35
+msgid "function"
+msgstr "fonction"
+
+#: models.py:38
+msgid "your question"
+msgstr "votre question porte sur"
+
+#: models.py:40
+msgid "message"
+msgstr "message"
+
+#: models.py:42
+msgid "e-mail"
+msgstr "e-mail"
+
+#: models.py:43
+msgid "phone"
+msgstr "téléphone"
+
+#: models.py:44
+msgid "mobile"
+msgstr "portable"
+
+#: models.py:46
+msgid "address"
+msgstr "adresse"
+
+#: models.py:47
+msgid "city"
+msgstr "ville"
+
+#: models.py:48
+msgid "postal code"
+msgstr "code postal"
+
+#: models.py:49
+msgid "region/state"
+msgstr "région / état"
+
+#: models.py:50
+msgid "country"
+msgstr "pays"
+
+#: models.py:53
+msgid "creation_date"
+msgstr "date de création"
+
+#: models.py:59
+msgid "contact"
+msgstr "contact"
+
+#: models.py:60
+msgid "contacts"
+msgstr "contacts"
+
+#: templates/contact_form/contact_form.html:15
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/contact_form/contact_form_sent.html:4
+msgid "Message sent"
+msgstr "Message envoyé"
+
+#: templates/contact_form/contact_form_sent.html:8
+msgid "Thank you for your contact, you will get a response quickly."
+msgstr "Merci d'avoir pris contact avec nous, vous recevrez une réponse rapidement."
+
+#~ msgid "architect/decorator"
+#~ msgstr "un architecte / décorateur"
+#~ msgid "student"
+#~ msgstr "un étudiant"
+#~ msgid "recruitment policy"
+#~ msgstr "notre politique de recrutement"
+

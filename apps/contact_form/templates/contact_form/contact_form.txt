@@ -1,0 +1,9 @@
+Name : {{ contact.first_name }} {{ contact.last_name }}
+Email : {{ contact.email }}
+Address : {{ contact.address }}
+
+{{ contact.title }}
+
+Message :
+{{ contact.message|safe }}
+

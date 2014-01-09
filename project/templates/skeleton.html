@@ -1,0 +1,71 @@
+{% load i18n cms_tags menu_tags sekizai_tags assets %}{% load url from future %}
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="{% block html_attr_alt %}{% endblock %}no-js lt-ie9" lang="{{ lang.code }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="{% block html_attr %}{% endblock %}no-js" lang="{{ lang.code }}"> <!--<![endif]-->
+<head>{% spaceless %}
+    <meta charset="utf-8">
+    <title>{% block head_title %}{{ SITE.name }}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block meta-description %}{% endblock %}">
+    <meta name="keywords" content="{% block meta-keywords %}{% endblock %}">
+    
+    {% comment %}<link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}favicon.ico">{% endcomment %}
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700,400italic,600italic,700italic">
+
+    {% assets "app_css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+    {% block head_more_links %}{% endblock %}
+    {% block head_base_js %}
+        {% assets "modernizr_js" "app_js" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+    {% endblock %}
+    {% endspaceless %}
+
+    {% render_block "css" %}
+    {% render_block "js" %}
+</head>
+
+<body{% block body_attr %}{% endblock %}>
+    {% cms_toolbar %}
+    {% block header_topbar %}{% spaceless %}<div id="header-container"{% block header_topbar_attr %} class="contain-to-grid"{% endblock %}>
+        <nav id="header" class="top-bar">
+            <ul>
+                <li class="name"><h1 class="brand-name"><a href="/" title="{{ SITE.name }}"><span class="brand">{{ SITE.name }}</span></a></h1></li>
+                {% block header_topbar_toggle %}<li class="toggle-topbar"><a href="#"></a></li>{% endblock %}
+            </ul>
+            {% endspaceless %}{% block menu_general %}<section class="menu">
+                <ul class="left" id="site-menu">
+                    {% show_menu 1 100 100 100 "menu/root_menu.html" %}
+                    <li{% block menu_item_zinnia %}{% endblock %}><a href="/news/">{% blocktrans %}News{% endblocktrans %}</a></li>
+                    <li{% block menu_item_contact %}{% endblock %}><a href="{% url 'contact_form' %}">{% blocktrans %}Contact{% endblocktrans %}</a></li>
+                </ul>
+            </section>{% endblock %}
+        </nav>
+    </div>{% endblock %}
+    
+    {% block subheader_container %}{% endblock %}
+
+    {% block content_container %}<div id="content-container"{% block content_container_attrs %}{% endblock %}>
+        {% block base_content %}{% endblock %}
+    </div>{% endblock %}
+
+
+    {% spaceless %}
+    <div id="footer-container" class="row">
+        {% block footer_credits %}<div class="credits">
+            <div class="row content">
+                <div class="twelve columns site-credits">
+                    <p>{% now "Y" %} © {{ SITE.name }} Tous droits réservés. | <a href="">Mentions Légales</a></p>
+                </div>
+            </div>
+        </div>
+    </div>{% endblock %}
+    {% endspaceless %}
+
+    {% spaceless %}
+    {% block foot_more_js %}{% endblock %}{% endspaceless %}
+</body>
+</html>

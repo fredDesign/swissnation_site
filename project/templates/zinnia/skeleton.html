@@ -1,0 +1,18 @@
+{% extends "skeleton.html" %}
+{% load i18n zinnia_tags %}
+{% load url from future %}
+{% block meta %}{% endblock %}
+
+{% block menu_item_zinnia %} class="active"{% endblock %}
+
+{% block subheader_container %}<div id="subheader-container"{% block subheader_topbar_attr %} class="contain-to-grid"{% endblock %}>
+    <nav id="subheader">
+        {% get_categories %}
+    </nav>
+</div>{% endblock %}
+
+{% block base_content %}<div class="row weblog">
+    <div class="twelve columns unpadded">
+        {% block content %}{% endblock %}
+    </div>
+</div>{% endblock %}
