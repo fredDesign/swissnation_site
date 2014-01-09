@@ -59,7 +59,7 @@ TIME_ZONE = 'Europe/Paris'
 
 
 LANGUAGES = [
-    ('fr', u'Français'),
+    ('fr', u'French'),
     ('de', u'German'),
     ('en', u'English'),
 ]

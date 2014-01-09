@@ -11,6 +11,11 @@
 /lib
 /lib64
 /build
+bin
+include
+lib
+lib64
+build
 
 # buildout
 *.egg-info
@@ -20,6 +25,11 @@
 /eggs
 /parts
 /etc
+develop-eggs
+django-apps-src
+eggs
+parts
+etc
 # do not hide /var/log, if does not exist uwsgi refuses to start
 /var/log/uwsgi.log
 
