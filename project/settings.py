@@ -3,16 +3,14 @@
 # Django settings for project project.
 import os
 
+from os import listdir
+from os.path import abspath, dirname, isfile, join
+
 gettext = lambda s: s
 
 USE_TZ = False
 USE_I18N = True
 USE_L10N = True
-
-
-
-from os import listdir
-from os.path import abspath, dirname, isfile, join
 
 PROJECT_PATH = abspath(dirname(__file__))
 VAR_PATH = join(PROJECT_PATH, '..', 'var')
@@ -21,7 +19,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    #('name', 'email'),
+    ('bloxboy', 'frederic.bloxboy@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -45,10 +43,7 @@ DATABASES = {
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['*'] # FIXME Put here the domain names
 
-# Local time zone for this installation. Choices can be found here:
-# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
-# although not all choices may be available on all operating systems.
-# In a Windows environment this must be set to your system time zone.
+
 TIME_ZONE = 'Europe/Paris'
 
 # Language code for this installation. All choices can be found here:
@@ -70,9 +65,6 @@ LOCALE_PATHS = (os.path.join(PROJECT_PATH, 'locale'),)
 
 SITE_ID = 1
 
-# If you set this to False, Django will make some optimizations so as not
-# to load the internationalization machinery.
-USE_I18N = True
 
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale.
@@ -129,6 +121,7 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+   'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',

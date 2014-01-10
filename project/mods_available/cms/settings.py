@@ -64,7 +64,7 @@ CMS_LANGUAGES = {
         {
             'code': 'fr',
             'name': gettext('French'),
-            'public': False,
+            'public': True,
         },
     ],
     2: [

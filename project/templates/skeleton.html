@@ -34,7 +34,7 @@
 
         {% for language in LANGUAGES %}
         <a href="/{{ language.0 }}/" {% ifequal lang language.0 %} class="current"{% endifequal %}><img src="{{ MEDIA_URL }}[path to your flags images]{{ language.0 }}.gif" />{{ language.0 }}</a>
-        {% endfor %
+        {% endfor %}
 
         <nav id="header" class="top-bar">
             <ul>
