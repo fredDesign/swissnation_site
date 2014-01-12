@@ -1,0 +1,266 @@
+
+//-----START
+//-----Grid 'MASONRY'
+// ______________________
+// CORRESPONDANCE AU JSON
+// ______________________
+//
+// view_size | taille du bloques
+// ----------------------
+// small : grid-sizer2 h-sizer2
+// default : aucune class, la taille est redéfinie par la class social_type
+// medium : grid-sizer3 h-sizer1
+// large : grid-sizer3 h-sizer2
+//
+// vertical-align in item
+// ----------------------
+// default : midlle
+// item-top : top
+// item-bottom : bottom
+
+
+#isocontainer {
+
+}
+#isogrid {
+  margin:0px ;
+}
+
+.grid-item {
+  background-color:transparent;
+
+}
+
+.containItem {
+  width:100%;
+  background-color:transparent;
+  display:table;
+  float:left;
+  margin-left:0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  > * {
+    color:#FFF;
+    display:block;
+    float:left;
+    clear:both
+  }
+}
+
+.h-sizer1 , .h-sizer2 {
+  overflow:visible;
+}
+.contentBlock {
+  padding:0em;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  width:100%;
+  box-sizing: padding-box;
+  @include box-sizing(border-box);
+  border:1px solid #d5d5d9;
+  border-right:0px;border-bottom:0px;
+  border-top:1px solid #d5d5d9;
+
+
+  H1,H2,H3,H4,H5 {
+    color:#FFF;
+  }
+  > * {margin: 0 2rem }
+
+  > *:first-child{margin-top:  0rem }
+  overflow: hidden;
+  overflow: hidden;
+}
+
+//align top
+.item-top  {
+  vertical-align: top;
+  .contentBlock {
+    vertical-align: top;
+    > *:first-child{margin-top:2rem }
+  }
+
+}
+//align top
+.item-bottom  {
+  box-sizing: border-box;
+  .contentBlock {
+    box-sizing: border-box;
+    vertical-align: bottom;
+     > P {margin-bottom:4rem }
+
+  }
+
+}
+
+
+
+//type twitter
+.twitter {
+  .containItem { background-color: #42bbe9;}
+  .contentBlock {
+    H1,H2,H3,H4 {
+      color:#FFF;
+    }
+    H5 {
+      color:#02749f;
+    }
+  }
+
+}
+
+
+
+.block_posted {
+  width:auto;
+  position:absolute;
+  bottom:32px;
+  h4,h5 {
+    margin:0;
+  }
+
+}
+
+
+
+
+.grid-item {
+  &:before {
+    font-family: 'icoparrot';
+    color:#FFF;
+    display:block;
+    position:absolute;
+    bottom:1em;
+    right:0.5em;
+    font-size:1.6em;
+  }
+  &.instagram:before {
+    content: "\49";
+
+  }
+  &.twitter:before {
+    content: "\54";
+  }
+  &.facebook:before {
+    content: "\46";
+  }
+  &.pinterest:before {
+    content: "\50";
+  }
+  &.googleplus:before {
+    content: "\47";
+  }
+  &.youtube:before {
+    content: "\59";
+  }
+  &.parrot_ico:before {
+    content: "\70";
+  }
+
+}
+
+//##
+//------------- taille de bloques responsive
+//##
+
+.grid-sizer3,grid-sizer{ width: 100%; }
+//small general
+.grid-sizer2 {
+  width:49.9%;
+}
+.grid-base {
+  width: 25%;
+}
+//##
+//------------- taille de bloques MEDIA QUERY
+//##
+@media screen and (min-width: 740px) {
+  //large
+  .grid-sizer3 { width: 50%;
+    //medium
+    &.h-sizer1 {
+    }
+  }
+  //small
+  .grid-sizer2 { width:25%; }
+  //X-small
+  .grid-sizer { width: 12.5%; }
+  //small
+  .grid-base { width: 12.5%; text-indent:-3000px}
+}
+
+
+@media screen and (min-width: 1900px) {
+  /* 10 columns for larger screens */
+  //large
+  .grid-sizer3 { width: 25%;
+    //medium
+    &.h-sizer1 {
+
+    }
+  }
+  //small
+  .grid-sizer2 { width: 12.5%;
+    H2 {
+      font-size:1.2rem;
+    }
+  }
+}
+
+
+//reset block;
+.hr {
+  width:100%;
+}
+@media screen and (min-width: 1900px) {
+
+  .hr {
+    width:0px;
+    display:none;
+  }
+  .grid-base { width: calc(1 / 16* 100%); text-indent:-3000px}
+}
+// blocks content
+
+.grid-sizer2 {
+  H2 {
+    font-size:1rem;
+  }
+  p {
+    line-height:1.4rem;
+  }
+  @media #{$medium-up} {
+    H2 {
+      font-size:1.2rem;
+    }
+    p {
+      line-height:1rem;
+    }
+  }
+
+  @media #{$large-up} {
+    H2 {
+      font-size:1.6rem;
+    }
+    p {
+      line-height:1.4rem;
+    }
+  }
+  @media #{$xlarge-up} {
+    H2 {
+      font-size:1.2rem;
+    }
+    p {
+      line-height:1.4rem;
+    }
+  }
+
+}
+//
+
+
+
+//-----END
+//-----Grid 'MASONRY'
+/*masonry skinning*/

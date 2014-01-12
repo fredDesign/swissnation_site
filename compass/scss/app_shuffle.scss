@@ -1,0 +1,28 @@
+@import "settings";
+@import "compass";
+
+/*color*/
+$blue:#95afcf;
+$green:#74c5c6;
+$orange:#e18e48;
+
+/* special foundation before */
+.contain-to-grid {
+    position: absolute;
+    z-index: 999;
+}
+
+@import "foundation";
+@import "components/icoparrot";
+
+
+
+body {
+  background-image:url('../images/themes/pattern.png');
+}
+
+.contain-to-grid {
+    background-color:transparent;
+    padding:16px;
+}
+
