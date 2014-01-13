@@ -327,3 +327,86 @@ Traceback (most recent call last):
   File "/Users/emencia/projets/projects/bloxSite/bloxboy-site/eggs/webassets-0.8-py2.7.egg/webassets/bundle.py", line 148, in resolve_contents
     raise BundleError(e)
 BundleError: 'js/foundation5/vendor/custom.modernizr.js' not found (using staticfiles finders)
+ERROR 2014-01-12 13:10:35,750 base 10592 4510175232 Internal Server Error: /fr/
+Traceback (most recent call last):
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_cms-2.4.2-py2.7.egg/cms/views.py", line 148, in details
+    return render_to_response(template_name, context_instance=context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_debug_toolbar-0.9.4-py2.7.egg/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_classy_tags-0.4-py2.7.egg/classytags/core.py", line 92, in __init__
+    self.kwargs, self.blocks = self.options.parse(parser, tokens)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_classy_tags-0.4-py2.7.egg/classytags/core.py", line 61, in parse
+    return argument_parser.parse(parser, tokens)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_classy_tags-0.4-py2.7.egg/classytags/parser.py", line 39, in parse
+    self.parse_blocks()
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_sekizai-0.7-py2.7.egg/sekizai/templatetags/sekizai_tags.py", line 44, in parse_blocks
+    self.blocks['nodelist'] = self.parser.parse()
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_classy_tags-0.4-py2.7.egg/classytags/core.py", line 92, in __init__
+    self.kwargs, self.blocks = self.options.parse(parser, tokens)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_classy_tags-0.4-py2.7.egg/classytags/core.py", line 61, in parse
+    return argument_parser.parse(parser, tokens)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_classy_tags-0.4-py2.7.egg/classytags/parser.py", line 39, in parse
+    self.parse_blocks()
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/django_sekizai-0.7-py2.7.egg/sekizai/templatetags/sekizai_tags.py", line 44, in parse_blocks
+    self.blocks['nodelist'] = self.parser.parse()
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/defaulttags.py", line 1162, in spaceless
+    nodelist = parser.parse(('endspaceless',))
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/defaulttags.py", line 769, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/bloxBoy/Documents/projets/swissnation_site/eggs/Django-1.5.4-py2.7.egg/django/template/base.py", line 327, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endspaceless', expected 'empty' ou 'endfor'

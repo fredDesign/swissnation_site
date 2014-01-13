@@ -7,7 +7,7 @@ $green:#74c5c6;
 $orange:#e18e48;
 
 .logo {
-  @include replace-text('../images/themes/logo.png')
+  @include replace-text('/themes/logo.png')
 }
 
 
